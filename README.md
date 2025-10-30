@@ -3,3 +3,5 @@ Class repo for BUS-FIN534
 Edited 10/21/35 for test
 Instructor edited
 Fairuz edited
+
+Teacher is stilll herererre
