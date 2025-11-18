@@ -161,7 +161,7 @@ oe = OrdinalEncoder(categories=category_order)
 # Fit and transform the categorical column
 df_encoded['BQ_encoded'] = oe.fit_transform(df_encoded[['BsmtQual']])
 
-# Get rid of BsmtQual
+# Get rid of BsmtQual because we've already have BQ_encoded
 df_encoded = df_encoded.drop('BsmtQual', axis=1)
 
 # Remove and add SalePrice so it's at the end (not really necessary)
