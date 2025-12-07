@@ -151,7 +151,7 @@ from sklearn.preprocessing import OrdinalEncoder
 
 # Sample DataFrame
 df_encoded['BsmtQual'] = df_encoded['BsmtQual'].fillna('NA') 
-
+df_encoded['BsmtQual'].value_counts()
 # Define the order of categories
 category_order = [['NA','Po','Fa','TA','Gd','Ex']]
 
@@ -170,7 +170,7 @@ df_encoded['SalePrice'] = df_encoded.pop('SalePrice')
 column_data_types = df_encoded.dtypes
 column_data_types
 
-
+df_encoded['BQ_encoded'].value_counts()
 # Run regression on unscaled data
 
 # First 1800 data items are training set; the next 600 are the validation set
